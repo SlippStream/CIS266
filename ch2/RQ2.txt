@@ -1,0 +1,96 @@
+MCTF
+1. C
+2. B
+3. A
+4. B
+5. A, D, C
+6. A
+7. C
+8. A
+9. A
+10. B
+11. B
+12. D
+13. A
+14. C
+15. D
+16. True
+17. True
+18. True
+19. False
+20. False
+21. False
+
+FTE
+1. The comment at the top of the file is declared incorrectly
+Multiple semicolons are missed
+MyProgram is not closed
+MyProgram is not declared as a class
+C is not a variable
+Strings must be surrounded by double quotes
+
+AW
+1. boolean state = false;
+char letter = 'A';
+2. int hour=10, minute=30, second=6;
+System.out.println(hour+":"+minute+":"+second);
+3. b = 2+a;
+a = 4*b;
+b = a / 3.14;
+a = b-8;
+c = 'K'
+c = 52
+4A. 12
+4B. 4
+4C. 2
+4D. 6
+4D. 1
+5A. 3.267E6
+5B. -9.7865E12
+5C. 7.65491E-3
+6. public class
+{
+ public static void main(String[] args)
+ {
+ System.out.print("This is line 1.\n\n");
+ System.out.print("This is line 2.\n\n");
+ System.out.print("This is line 3.\n\n");
+ System.out.print("This is line 4.\n\n");
+ System.out.println("This is line 5.");
+ }
+}
+7. 10 20 1
+8. 12
+9. a
+10. HAVE A GREAT DAY!
+Have a great day!
+11. int speed=20, time=10, distance;
+distance = speed*time;
+System.out.println(distance);
+12. double pressure,force=172.5,area=27.5;
+pressure=area/force;
+System.out.println(pressure);
+13. import java.util.Scanner;
+Scanner in = new Scanner(System.in);
+System.out.print("Please enter your annual income: $");
+double income = in.nextDouble();
+14. string inR = JOptionPane.showInputDialog("Please enter the radius of a circle: ");
+double r = Double.parseDouble(inR);
+System.out.println("Area: " + (3.14 * r * r));
+15.System.out.printf("%,15.2f", 765437.5674);
+
+SA
+1. Multiline
+2. Single-line
+3. Widening conversion is when a lower-level variable is converted to a higher-level type, and vice versa.
+4. Case-Sensitive means that whether a letter is upper or lower case is important in deciding its meaning.
+5. print and println are members of the out class which is a member of the System class
+6. Must start with a letter, underscore, or dollar sign, cannot have spaces, and must have at least one character.
+7. println is just print that skips a line after printing.
+8. How much memory a type uses and what you'll be doing with it.
+9. Initialization makes a spot for it in memory, and assignment gives it a value.
+10. // comments are single-line whereas /* comments are Multiline
+11. Programming style is the focus that your programs are built with. Interchanging them can lead to messy and inconsistent code.
+12. The actual value can be changed in a single statement.
+13. javadoc SalesAverage.java
+14. short

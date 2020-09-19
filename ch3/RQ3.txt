@@ -1,0 +1,77 @@
+MCTF
+1. private
+2. Blueprint
+3. Instance
+4. Field
+5. Unified Modeling Language
+6. Return
+7. Accessor
+8. Mutator
+9. Stale
+10. Constructor
+11. Shadows
+12. Default Constructor
+13. Java.lang
+14. True
+15. True
+16. False
+17. True
+18. True
+19. False
+
+FTE
+1. Nested classes must be static and not public
+2. total() does not have a return type
+3. Rectangle's constructor is a method and needs parentheses
+
+AW
+1. class Pet {
+    private String name;
+    private String animal;
+    private int age;
+
+    void setName(String name) {this.name = name;}
+    void setAnimal(String animal) {this.animal = animal;}
+    void setAge(int age) {this.age = age;}
+    String getName() {return name;}
+    String getAnimal() {return animal;}
+    int getAge() {return age;}
+}
+2a. public Book(String title, String author, String publisher, int copiesSold) {
+    this.author = author;
+    this.title = title;
+    this.publisher = publisher;
+    this.copiesSold = copiesSold;
+}
+2b. void setAuthor(String author) {this.author=author;}
+void setTitle(String title) {this.title=title;}
+void setPublisher(String publisher) {this.publisher=publisher;}
+void setCopiesSold(int copiesSold) {this.copiesSold=copiesSold;}
+String getAuthor() {return author;}
+String getTitle() {return title;}
+String getPublisher() {return publisher;}
+int getCopiesSold() {return copiesSold;}
+3a. Account, MoneyMarket, Checking, Savings, Customer, Interest
+3b. Account, MoneyMarket, Checking, Savings
+3c. Account - basic withdrawl and deposit functions and balance field
+MoneyMarket - child of account with money market interest
+Savings - child of account with savings interest
+Checking - child of account with checking interest
+
+SA
+1. Must have the same name as the class, 
+must not have a return type,
+must not be a duplicate of another constructor in the same class.
+2. The blueprint, as each instance of a class has the same bones.
+3. A field of a class that has not yet had data assigned to it.
+4. Yes, as it prevents unwanted access to possibly stale data.
+5. All code written within that class.
+6. To initialize a new object.
+7. It checks the current folder for Customer.class, if it's not there is searches for 
+Customer.java and compiles it, creating Customer.class. Repeat for Account.
+8. An accessor method returns the value of a field inside the class, and a mutator changes that value.
+9. They are called when an object is initialized, before any other methods occur.
+10. Because they do nothing other than store a value.
+11. Edits made to a non-reference variable do not change the original variable.
+12. When no other constructor is defined.
+13. They can only be used in the class or method they're defined in.

@@ -1,0 +1,174 @@
+MCTF
+1. C
+2. A
+3. C
+4. D
+5. B
+6. A
+7. B
+8. A
+9. C
+10. C
+11. A
+12. B
+13. C
+14. A
+15. D
+16. A
+17. D
+18. B
+19. T
+20. F
+21. F
+22. T
+23. F
+24. T
+25. T
+26. F
+
+FTE
+1. again is never initialized and the while loop is not in braces
+2. total is not initialized.
+3. Choice is not a variable and should be compared with ==
+4. count is incremented twice
+
+AW
+1. int product = 0, temp;
+while (product < 100) {
+    System.out.print("Please enter a number: ");
+    temp = scanner.nextInt();
+    product = temp * 10;
+}
+2. boolean again = false;
+int num1, num2;
+String in;
+do {
+    System.out.print("Please enter number 1: ");
+    num1 = scanner.nextInt();
+    System.out.print("Please enter number 2: ");
+    num2 = scanner.nextInt();
+    System.out.println("Sum: " + (num1+num2));
+    System.out.print("Would you like to go again? (y/n) ");
+    in = scanner.next();
+    if (in.eqauls('y')) again = true;
+    else again = false;
+} while(again==true);
+3. for (int i =1; i<=10;i++) {
+    System.out.println("5 X " + i + " = " (5*i));
+}
+4. for (int i=65; i<=75 ;i++) {
+    System.out.print((char)i);
+}
+5. int total = 0;
+for (int i=1; i <=30; i++) {
+    total += (i / (31 - i));
+}
+6. for (int i = 0; i<10; i++) {
+    for (int k=0;k<15;k++) {
+        System.out.print("#");
+    }
+    System.out.print("\n");
+}
+7. for (int i = 0; i<7; i++) {
+    int k = 7 - i;
+    for (; k > 0; k-- ) {
+        System.out.print('*');
+    }
+    System.out.print("\n");
+}
+8. for (int i=0; i<7; i++) {
+    System.out.print('#');
+    for (int k=0; k<i; k++) {
+        System.out.print(" ");
+    }
+    System.out.print("#\n");
+}
+9. public class ReviewQuestion {
+    public static void main(String[] args)
+        for (int i=0; i<10; i++) {
+            int r = rand.nextInt(1);
+            if (r == 1) System.out.println("Yes");
+            else System.out.println("No");
+        }
+    }
+}
+10. Scanner keyboard = new Scanner(System.in);
+int x;
+do {
+ System.out.print("Enter a number: ");
+ x = keyboard.nextInt();
+} while (x>0);
+11. Scanner keyboard = new Scanner(System.in);
+String input;
+char sure = 'i';
+do
+while (sure ! = 'Y' && sure ! = 'N') {
+ System.out.print("Are you sure you want to quit? ");
+ input = keyboard.next();
+ sure = input.charAt(0);
+}
+12. int count = 0;
+for (;count < 50; count++)
+{
+ System.out.println("count is " + count);
+}
+13. for (int i = 1; i <5; i++) {
+    int k;
+    for (k=1; k<i; k++) {
+        System.out.print(k);
+    }
+    for (;k>=1;k--) {
+        System.out.print(k);
+    }
+    System.out.println();
+}
+14. do {
+    System.out.print("Please enter a number between 1 and 5: ");
+    num = in.nextInt();
+} while(num < 1 || num > 5);
+15. do {
+    System.out.print("Please enter yes or no: ");
+    in = in.next();
+} while(in != "yes" && in != "no");
+16. File file = new File("numberList.txt");
+PrintWriter out = new PrintWriter(file);
+for (int i=1; i<=50;i++) {
+    out.println(i);
+}
+17. File file = new File("numberList.txt");
+Scanner scan = new Scanner(file);
+while (scan.hasNextLine()) {
+    System.out.println(scan.nextLine());
+}
+18. File file = new File("numberList.txt");
+PrintWriter out = new PrintWriter(file);
+for (int i=1; i<=50;i++) {
+    if (i % 2 != 0) out.append(i);
+}
+19. FileWriter fileWrite = new FileWriter("numberList.txt", true);
+PrintWriter out = new PrintWriter(fileWrite);
+
+SA
+1. prefix operators apply before any other operation, and postfix operators apply after other operations
+2. to make the code more easily readable.
+3. An expression to test and a block of statements.
+4. They only get run if the test condition is true.
+5. An initization statement, a test expression, and an increment.
+6. while
+7. do-while
+8. A loop that executes multiple times per iteration of another loop.
+9. operations cannot be done on variables that hold no value.
+10. An infinite loop has no way of ending. while(true) {something();}
+11. Totalling money spent during a month.
+12. To let a user decide when to break the loop via an input device.
+13. It will always be obvious when you've reached the end of a piece of data.
+14. It could throw off the data that would have been manipulated in further iterations.
+15. A bank account that needs to sum deposits for each month.
+16. So the program doesn't crash if the file doesn't exist.
+17. So as not to cause a memory leak
+18. Where the scanner is reading from. Before the first character
+19. print drops it in front of the previous content, whereas println creates a line break.
+20. False.
+21. They don't interpret the binary data as data.
+22. To add data to a file without overwriting.
+23. Using FileWriter rather than File.

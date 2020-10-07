@@ -1,5 +1,5 @@
 //Nick Zimanski - CIS266
-//26 September 2020
+//5 October 2020
 import java.util.Scanner;
 public class template {
     public static void main(String[] args) {
